@@ -52,12 +52,12 @@ const Home = () => {
   } else {
     content = (
       <>
-      <div>
+      <div className="flex md:flex-row flex-col p-12 items-center justify-between">
         <Current data={data}/>
         <WeekForecast data={data}/>
       </div>
       <div> 
-        <WeatherDetail/>
+        <WeatherDetail data={data}/>
       </div>
       </>
 
@@ -65,7 +65,7 @@ const Home = () => {
   }
 
   return (
-    <div className="bg-cover bg-gradient-to-t from-blue-900 to-purple-500 h-screen">
+    <div className="bg-cover bg-gradient-to-t from-blue-900 to-purple-500 h-fit">
       <div className="bg-purple/25 w-full flex flex-col h-fit">
       <div className="flex flex-col md:flex-row justify-between items-center p-14">
         <Input handleSearch={handleSearch} setLocation={setLocation}/>
