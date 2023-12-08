@@ -9,7 +9,7 @@ function WeatherDetail({ data }) {
   return (
     <div className='p-10'>
       <h1 className='mb-4 text-2xl text-white'>Weather details</h1>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-[60rem]'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4-[50px] gap-4 max-w-[60rem]'>
         <div className='bg-gradient-to-tr from-blue-700 to-purple-500 flex p-4 
         items-center justify-center gap-6 rounded-xl text-white  '> 
         <div className='text-2xl'>
